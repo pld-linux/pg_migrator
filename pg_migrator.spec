@@ -8,7 +8,7 @@ Source0:	http://pgfoundry.org/frs/download.php/2695/%{name}-%{version}.tgz
 # Source0-md5:	b71a514c75403c522093e1e511ffb278
 URL:		http://pgfoundry.org/projects/pg-migrator
 BuildRequires:	postgresql-devel >= 8.4
-Requires:	postgresql-server >= 8.3
+Requires:	postgresql >= 8.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
