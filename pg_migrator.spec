@@ -4,8 +4,8 @@ Version:	8.4.19
 Release:	1
 License:	BSD
 Group:		Applications/Databases
-Source0:	http://pgfoundry.org/frs/download.php/2695/%{name}-%{version}.tgz
-# Source0-md5:	b71a514c75403c522093e1e511ffb278
+Source0:	http://pgfoundry.org/frs/download.php/2698/%{name}-%{version}.tgz
+# Source0-md5:	cadfaba358f73c2c6a69102d2ae67a7d
 URL:		http://pgfoundry.org/projects/pg-migrator
 BuildRequires:	postgresql-devel >= 8.4
 Requires:	postgresql >= 8.3
