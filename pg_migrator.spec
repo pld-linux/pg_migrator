@@ -1,6 +1,6 @@
 Summary:	In-place data upgrade utility for PostgreSQL
 Name:		pg_migrator
-Version:	8.4.18
+Version:	8.4.19
 Release:	1
 License:	BSD
 Group:		Applications/Databases
@@ -26,15 +26,10 @@ required by many upgrades.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_docdir}/%{name}-%{version},%{_libdir}}
 
-install -d $RPM_BUILD_ROOT%{_bindir}/
-install -d $RPM_BUILD_ROOT%{_libdir}/
-install -d $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}
 install src/pg_migrator $RPM_BUILD_ROOT%{_bindir}
 install func/pg_migrator*.so $RPM_BUILD_ROOT%{_libdir}
-install DEVELOPERS IMPLEMENTATION INSTALL LICENSE README TODO $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}
-
-strip $RPM_BUILD_ROOT/%{_libdir}/*.so
 
 %clean
 rm -rf $RPM_BUILD_ROOT
